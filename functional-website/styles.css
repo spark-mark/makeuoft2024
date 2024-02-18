@@ -42,7 +42,56 @@ header p {
   display: block;
   margin-bottom: 5px;
 }
-
+.sleep-summary {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .sleep-summary > div {
+    text-align: center;
+    flex-basis: 100px; /* Adjust the width as needed */
+  }
+  
+  .sleep-summary span {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .sleep-summary span:first-child {
+    font-size: 1em;
+    color: #7f8c8d;
+  }
+  
+  .sleep-summary span:last-child {
+    font-size: 2em;
+    color: #ecf0f1;
+  }
+  
+  canvas {
+    max-width: 300px; /* This sets a maximum width for your canvas elements */
+    margin-top: 20px;
+  }
+  
+  /* If you want to have a responsive design, consider using media queries */
+  @media (max-width: 768px) {
+    .sleep-summary {
+      flex-direction: column;
+    }
+  
+    .sleep-summary > div {
+      margin-bottom: 20px;
+    }
+  
+    canvas {
+      width: 100%;
+    }
+  }
+  
 canvas {
     width: 600px;
     height: 400px;
