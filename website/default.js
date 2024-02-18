@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         options: {
             responsive: false,
             maintainAspectRatio: true,
-            circumference: Math.PI, // To make it a semi-circle (180 degrees)
+            circumference: 2*Math.PI, // To make it a semi-circle (180 degrees)
             rotation: -Math.PI, // To start from the top
             cutoutPercentage: 60, // To increase the thickness of the doughnut
             legend: {
