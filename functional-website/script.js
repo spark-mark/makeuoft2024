@@ -76,4 +76,25 @@ function createRaindrop() {
       alert('You clicked on ' + this.querySelector('span').textContent);
     });
   });
-  
+  $(document).ready(function () {
+    setInterval(function() {
+        $.ajax({ 
+            type: 'GET', 
+            url: 'http://172.20.10.2/', 
+            data: { get_param: 'value' }, 
+            success: function (data) { 
+                console.log("Received data:", data); // Log the received data
+
+                // Assuming data is already parsed JSON object
+                // Update the HTML elements with the received data
+                $("#Temperature").text(data.temperature + "°C");
+                $("#Humidity").text(data.humidity);
+                $("#Sound").text(data.sound + "dB");
+                $("#Light").text(data.lightVal + "%");
+            },
+            error: function(xhr, status, error) {
+                console.log("Error fetching data:", xhr.status, xhr.statusText);
+            }
+        });
+    }, 500); // time in milliseconds (0.5 seconds)
+});
