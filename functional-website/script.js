@@ -20,3 +20,30 @@ var audioLevelChart = new Chart(ctxAudio, {
     }
   }
 });
+var ctxSleepPie = document.getElementById('sleepPieChart').getContext('2d');
+var sleepPieChart = new Chart(ctxSleepPie, {
+  type: 'pie', // or 'doughnut' if you prefer a donut style chart
+  data: {
+    labels: ['Time Asleep', 'Time Awake in Bed'],
+    datasets: [{
+      label: 'Sleep Analysis',
+      data: [7 * 60 + 34, 23], // Assuming time is in minutes: [total sleep time, awake time]
+      backgroundColor: [
+        'rgba(54, 162, 235, 0.6)', // Blue color for sleep
+        'rgba(255, 99, 132, 0.6)' // Red color for awake
+      ],
+      borderColor: [
+        'rgba(54, 162, 235, 1)',
+        'rgba(255,99,132,1)'
+      ],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    legend: {
+      position: 'bottom' // Position of the legend, can be 'top', 'left', 'bottom', 'right'
+    }
+  }
+});
