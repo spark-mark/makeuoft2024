@@ -13,18 +13,18 @@ document.addEventListener('DOMContentLoaded', function () {
                     'rgba(208, 172, 102, 1)'  // Gold shade for awake
                 ],
                 borderColor: [
-                    'rgba(255, 255, 255, 1)', // White borders
-                    'rgba(255, 255, 255, 1)'
+                    'rgba(10, 10, 10, 0.4)', // glass borders
+                    'rgba(10, 10, 10, 0.4)'
                 ],
-                borderWidth: 2
+                borderWidth: 1
             }]
         },
         options: {
-            responsive: false,
+            responsive: true,
             maintainAspectRatio: true,
             circumference: 2*Math.PI, // To make it a semi-circle (180 degrees)
             rotation: -Math.PI, // To start from the top
-            cutoutPercentage: 60, // To increase the thickness of the doughnut
+            cutoutPercentage: 50, // To increase the thickness of the doughnut
             legend: {
                 display: false // Assuming we don't want to display the legend
             },
