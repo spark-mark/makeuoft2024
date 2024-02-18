@@ -69,4 +69,11 @@ function createRaindrop() {
   
   // Create a new raindrop every 100 milliseconds
   setInterval(createRaindrop, 100);
+
+  document.querySelectorAll('.data-point').forEach(item => {
+    item.addEventListener('click', function() {
+      // Placeholder for an action, like fetching new data
+      alert('You clicked on ' + this.querySelector('span').textContent);
+    });
+  });
   

@@ -85,7 +85,55 @@ header p {
     max-width: 300px; /* Adjust as necessary for the pie chart */
     margin: 20px auto; /* Center the pie chart specifically */
 }
-
+.sleep-quality {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px; /* Adjust space between data points */
+  }
+  
+  .data-point {
+    background: #2c3e50;
+    padding: 15px;
+    border-radius: 10px;
+    width: 180px; /* Adjust based on your layout */
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .data-point:hover {
+    transform: translateY(-5px);
+    background: #34495e;
+    cursor: pointer;
+  }
+  
+  .data-point span {
+    display: block;
+  }
+  
+  .value {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  /* Tooltip styling */
+  .data-point[data-tooltip]:hover:after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #34495e;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    z-index: 10;
+  }
+  
 .sleep-quality div {
     margin-bottom: 10px;
 }
