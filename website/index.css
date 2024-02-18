@@ -44,6 +44,6 @@ img.BgFull1, .InternalRec, .Rectangle25, .Rectangle26 {
     border-left: 1px solid white; /* Creates the vertical line */
 }
 #sleepChart {
-    width: 121px;
-    height: 121.5px; 
+    width: 121%;
+    height: 121.5%; 
 }
