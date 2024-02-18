@@ -47,3 +47,26 @@ var sleepPieChart = new Chart(ctxSleepPie, {
     }
   }
 });
+function createRaindrop() {
+    // Create a div element for the raindrop
+    var raindrop = document.createElement('div');
+    raindrop.classList.add('raindrop');
+  
+    // Set a random horizontal position
+    raindrop.style.left = Math.random() * 100 + 'vw';
+    
+    // Randomize the animation duration to create a more natural effect
+    raindrop.style.animationDuration = (Math.random() * 1 + 0.5) + 's';
+  
+    // Append the raindrop to the body
+    document.body.appendChild(raindrop);
+  
+    // Remove raindrop after it falls out of view to prevent a memory leak
+    setTimeout(function() {
+      raindrop.remove();
+    }, 2000);
+  }
+  
+  // Create a new raindrop every 100 milliseconds
+  setInterval(createRaindrop, 100);
+  

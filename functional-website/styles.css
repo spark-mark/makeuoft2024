@@ -93,3 +93,18 @@ header p {
         height: auto;
     }
 }
+.raindrop {
+    width: 1px;
+    height: 89px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    bottom: 100%;
+    animation: fall linear infinite;
+  }
+  
+  @keyframes fall {
+    to {
+      transform: translateY(100vh);
+    }
+  }
+  
