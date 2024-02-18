@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sleep Analysis Dashboard</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Today, Saturday</h1>
+    <p>17 February 2024</p>
+  </header>
+
+  <section class="sleep-summary">
+    <div class="total-sleep">
+      <span>Total Sleep</span>
+      <span>7hrs 34m</span>
+    </div>
+    <div class="awake">
+      <span>Awake</span>
+      <span>23m</span>
+    </div>
+  </section>
+
+  <section class="charts">
+    <canvas id="sleepPositionChart"></canvas>
+    <canvas id="audioLevelChart"></canvas>
+  </section>
+
+  <section class="sleep-quality">
+    <div>
+      <span>Temperature</span>
+      <span>23°C</span>
+    </div>
+    <div>
+      <span>Feels Like</span>
+      <span>25°C</span>
+    </div>
+    <div>
+      <span>Humidity</span>
+      <span>324</span>
+    </div>
+    <div>
+      <span>Max Volume</span>
+      <span>45dB</span>
+    </div>
+    <div>
+      <span>Max Room Brightness</span>
+      <span>5%</span>
+    </div>
+    <div>
+      <span>Loud Noises Detected</span>
+      <span>3 times</span>
+    </div>
+  </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
