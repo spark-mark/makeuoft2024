@@ -1,0 +1,9 @@
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.Header, .Date, .SleepPosition, .AudioLevelsDb, .Duration, .InternalRec, .SleepQuality {
+    font-family: 'Outfit', sans-serif;
+}
+</style>
