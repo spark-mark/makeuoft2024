@@ -2,10 +2,10 @@ var ctxAudio = document.getElementById('audioLevelChart').getContext('2d');
 var audioLevelChart = new Chart(ctxAudio, {
   type: 'line',
   data: {
-    labels: ['12 AM', '2 AM', '4 AM', '6 AM', '8 AM'],
+    labels: ['12 AM', '1 AM', '2 AM', '3 AM', '4 AM', '5 AM', '6 AM', '7 AM', '8 AM'],
     datasets: [{
       label: 'Audio Levels [dB]',
-      data: [20, 25, 30, 35, 40], // Example data points
+      data: [20, 18, 17, 35, 22, 19, 16, 21, 27], // Example data points
       backgroundColor: 'rgba(75, 192, 192, 0.2)',
       borderColor: 'rgba(75, 192, 192, 1)',
       borderWidth: 2,
