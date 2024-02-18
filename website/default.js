@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }]
         },
         options: {
-            responsive: true,
+            responsive: false,
             maintainAspectRatio: false,
             circumference: Math.PI, // To make it a semi-circle (180 degrees)
             rotation: -Math.PI, // To start from the top
