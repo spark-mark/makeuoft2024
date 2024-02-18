@@ -37,12 +37,9 @@ img.BgFull1, .InternalRec, .Rectangle25, .Rectangle26 {
 }
 
 .Line3 {
-    width: 45px; /* Adjust if necessary */
-    height: 0px; /* For the line thickness */
-    position: absolute; /* Or relative, depending on your layout */
-    left: 50%; /* Adjust this value to align */
-    top: 50%; /* Adjust this value to align */
-    transform: rotate(90deg);
-    transform-origin: 50% 50%; /* Adjust this value to change the rotation point */
-    border: 1px white solid; /* Your existing border for the line */
+    position: absolute;
+    bottom: 0; /* Aligns the line to the bottom of the parent container */
+    left: 50%; /* This should be adjusted to place the line under the correct time */
+    height: 20px; /* Or whatever the height should be */
+    border-left: 1px solid white; /* Creates the vertical line */
 }
