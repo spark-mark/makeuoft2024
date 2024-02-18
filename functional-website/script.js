@@ -27,4 +27,3 @@ document.addEventListener('DOMContentLoaded', function() {
       data: {
         labels: ['12 AM', '2 AM', '4 AM', '6 AM', '8 AM'],
         datasets
-  
