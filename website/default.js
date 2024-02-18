@@ -16,15 +16,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     'rgba(10, 10, 10, 0.4)', // glass borders
                     'rgba(10, 10, 10, 0.4)'
                 ],
-                borderWidth: 1
+                borderWidth: 2
             }]
         },
         options: {
             responsive: true,
             maintainAspectRatio: true,
-            circumference: 2*Math.PI, // To make it a semi-circle (180 degrees)
+            circumference: Math.PI*2, // To make it a semi-circle (180 degrees)
             rotation: -Math.PI, // To start from the top
-            cutoutPercentage: 50, // To increase the thickness of the doughnut
+            cutoutPercentage: 60, // To increase the thickness of the doughnut
             legend: {
                 display: false // Assuming we don't want to display the legend
             },
