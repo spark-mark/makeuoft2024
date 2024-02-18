@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             labels: ['Total Sleep', 'Awake'],
             datasets: [{
                 label: 'Sleep Duration',
-                data: [454, 23], // Assuming 454 minutes of sleep (7hrs 34m) and 23 minutes awake
+                data: [7 * 60 + 34, 23], // Assuming 454 minutes of sleep (7hrs 34m) and 23 minutes awake
                 backgroundColor: [
                     'rgba(131, 136, 235, 1)', // Blue shade for sleep
                     'rgba(208, 172, 102, 1)'  // Gold shade for awake
@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function () {
             responsive: false,
             maintainAspectRatio: true,
             circumference: Math.PI*2, // To make it a semi-circle (180 degrees)
-            rotation: -Math.PI, // To start from the top
-            cutoutPercentage: 50, // To increase the thickness of the doughnut
+            rotation: Math.PI, // To start from the top
+            cutoutPercentage: 80, // To increase the thickness of the doughnut
             legend: {
                 display: false // Assuming we don't want to display the legend
             },
