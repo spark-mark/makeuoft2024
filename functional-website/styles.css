@@ -53,17 +53,32 @@ header p {
     color: #ecf0f1;
 }
 
+/* Adjusting the layout for the charts section */
 .charts {
-    width: 100%; /* Ensures that the chart container takes the full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align items for aesthetic spacing */
   }
 
-/* General chart styles */
-.charts canvas {
-    display: block;
-    width: 100% !important; /* This will make sure the canvas is full width of its container */
-    height: auto !important; /* This will maintain the aspect ratio of the chart */
-    max-width: 100% !important; /* Ensures the canvas does not exceed the width of its container */
+  /* Specific styles for chart containers */
+.chart-container {
+    width: 100%; /* Full width to contain the chart */
+    max-width: 600px; /* Or whatever max-width you prefer */
+    margin: 10px auto; /* Reduced margin for less space between charts */
   }
+
+/* Adjusting canvas directly if needed */
+.charts canvas {
+    width: 100% !important;
+    height: auto !important; /* Maintain aspect ratio */
+    margin-bottom: 0 !important; /* Remove any bottom margin */
+  }
+
+  /* Additional responsive adjustments if needed */
+@media (max-width: 768px) {
+    .charts {
+      flex-direction: column;
+    }
 
 /* Specific styles for the pie chart, if needed */
 #sleepPieChart {
