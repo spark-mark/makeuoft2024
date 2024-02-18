@@ -33,10 +33,10 @@
     <div class="chart-container">
       <canvas id="sleepPositionChart"></canvas>
     </div>
-    <section class="charts">
+    <div class="chart-container">
       <canvas id="audioLevelChart"></canvas>
-    </section>
-  </section>
+    </div>
+  </section>  
 
   <section class="sleep-quality">
     <div class="data-point" data-tooltip="Average room temperature during sleep">
@@ -47,24 +47,23 @@
       <span>Feels Like</span>
       <span class="value">25°C</span>
     </div>
-    <div>
-      <span>Humidity</span>
-      <span>324</span>
-    </div>
-    <div>
-      <span>Max Volume</span>
-      <span>45dB</span>
-    </div>
-    <div>
-      <span>Max Room Brightness</span>
-      <span>5%</span>
-    </div>
-    <div>
-      <span>Loud Noises Detected</span>
-      <span>3 times</span>
-    </div>
+  <div class="data-point" data-tooltip="Humidity level during sleep">
+    <span>Humidity</span>
+    <span class="value">324</span>
+  </div>
+  <div class="data-point" data-tooltip="Maximum volume recorded">
+    <span>Max Volume</span>
+    <span class="value">45dB</span>
+  </div>
+  <div class="data-point" data-tooltip="Maximum room brightness level">
+    <span>Max Room Brightness</span>
+    <span class="value">5%</span>
+  </div>
+  <div class="data-point" data-tooltip="Number of loud noises detected">
+    <span>Loud Noises Detected</span>
+    <span class="value">3 times</span>
+  </div>
   </section>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="script.js"></script>
