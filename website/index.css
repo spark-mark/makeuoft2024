@@ -35,3 +35,14 @@ img.BgFull1, .InternalRec, .Rectangle25, .Rectangle26 {
     width: 100%; /* Makes images and backgrounds responsive */
     height: auto; /* Maintains aspect ratio */
 }
+
+.Line3 {
+    width: 45px; /* Adjust if necessary */
+    height: 0px; /* For the line thickness */
+    position: absolute; /* Or relative, depending on your layout */
+    left: 50%; /* Adjust this value to align */
+    top: 50%; /* Adjust this value to align */
+    transform: rotate(90deg);
+    transform-origin: 50% 50%; /* Adjust this value to change the rotation point */
+    border: 1px white solid; /* Your existing border for the line */
+}
