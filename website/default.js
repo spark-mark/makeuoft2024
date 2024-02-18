@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     'rgba(10, 10, 10, 0.4)', // glass borders
                     'rgba(10, 10, 10, 0.4)'
                 ],
-                borderWidth: 2
+                borderWidth: 1
             }]
         },
         options: {
