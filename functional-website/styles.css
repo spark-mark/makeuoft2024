@@ -53,14 +53,17 @@ header p {
     color: #ecf0f1;
 }
 
+.charts {
+    width: 100%; /* Ensures that the chart container takes the full width */
+  }
+
 /* General chart styles */
 .charts canvas {
-    display: block; /* Default to block layout */
-    width: 100% !important; /* Full width of the container */
-    height: auto !important; /* Maintain aspect ratio */
-    max-width: 600px; /* Maximum width, but can be smaller */
-    margin: auto; /* Center the canvas if it's smaller than max-width */
-}
+    display: block;
+    width: 100% !important; /* This will make sure the canvas is full width of its container */
+    height: auto !important; /* This will maintain the aspect ratio of the chart */
+    max-width: 100% !important; /* Ensures the canvas does not exceed the width of its container */
+  }
 
 /* Specific styles for the pie chart, if needed */
 #sleepPieChart {
