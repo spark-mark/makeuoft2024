@@ -85,12 +85,12 @@ function createRaindrop() {
             success: function (data) { 
                 console.log("Received data:", data); // Log the received data
 
-                // Assuming data is already parsed JSON object
-                // Update the HTML elements with the received data
+                // Correctly access and update data points
                 $("#Temperature").text(data.temperature + "°C");
                 $("#Humidity").text(data.humidity);
-                $("#Sound").text(data.sound + "dB");
+                $("#Sound").text(data.sound + "dB"); // Assuming this is for "Max Volume"
                 $("#Light").text(data.lightVal + "%");
+                $("#NoisesDetected").text(data.noisesDetected); // Update this ID according to your HTML
             },
             error: function(xhr, status, error) {
                 console.log("Error fetching data:", xhr.status, xhr.statusText);

@@ -55,10 +55,10 @@
       <span>Max Room Brightness</span>
       <span class="value" id="Light">0%</span>
     </div>    
-  <div class="data-point" data-tooltip="Number of loud noises detected">
-    <span>Loud Noises Detected</span>
-    <span class="value" id="Sound">3</span>
-  </div>
+    <div class="data-point" data-tooltip="Number of loud noises detected">
+      <span>Loud Noises Detected</span>
+      <span class="value" id="NoisesDetected">3 times</span>
+    </div>    
   </section>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -85,7 +85,7 @@
                     var Sound = data.sound;
 
                     // Update the HTML element with the photoresistor data
-                    $("#Light").text(photoresistorData);
+                    $("#Light").text(Light);
 
                 },
                 error: function(xhr, status, error) {
