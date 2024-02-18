@@ -20,11 +20,11 @@ document.addEventListener('DOMContentLoaded', function () {
             }]
         },
         options: {
-            responsive: true,
+            responsive: false,
             maintainAspectRatio: true,
             circumference: Math.PI*2, // To make it a semi-circle (180 degrees)
             rotation: -Math.PI, // To start from the top
-            cutoutPercentage: 60, // To increase the thickness of the doughnut
+            cutoutPercentage: 50, // To increase the thickness of the doughnut
             legend: {
                 display: false // Assuming we don't want to display the legend
             },
