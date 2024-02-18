@@ -42,3 +42,9 @@ header p {
   display: block;
   margin-bottom: 5px;
 }
+
+canvas {
+    width: 600px;
+    height: 400px;
+  }
+  
